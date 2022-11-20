@@ -2,7 +2,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BonusServiceTest {
 
-    private boolean folse;
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForRegisteredAndUnderLimit() {
@@ -42,7 +41,7 @@ public class BonusServiceTest {
 
         // подготавливаем данные:
         long amount = 1000;
-        boolean registered = folse ;
+        boolean registered = false ;
         long expected = 10;
 
         // вызываем целевой метод:
@@ -58,7 +57,7 @@ public class BonusServiceTest {
 
         // подготавливаем данные:
         long amount = 1_000_000;
-        boolean registered = folse ;
+        boolean registered = false ;
         long expected = 500;
 
         // вызываем целевой метод:
